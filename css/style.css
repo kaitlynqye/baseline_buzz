@@ -1,0 +1,156 @@
+/* Global styles */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f6fef5;
+  color: #2f4f4f;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header and Navigation */
+header {
+  background-color: #b6e2d3;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #a0d9b4;
+  padding: 15px 0;
+  gap: 40px;
+}
+
+nav a {
+  color: #2f4f4f;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: #ffffff;
+}
+
+/* Scrolling ticker styling */
+.ticker {
+  display: inline-block;
+  width: 100%;
+  background-color: #d6f542;
+  color: #2f4f4f;
+  padding: 10px;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: scroll-left 20s linear infinite;
+  cursor: pointer;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  text-align: center;
+}
+
+/* Pause animation on hover or focus */
+.ticker:hover,
+.ticker:focus {
+  animation-play-state: paused;
+}
+
+@keyframes scroll-left {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* Main Content Section */
+main {
+  padding: 30px 20px;
+  text-align: center;
+}
+
+/* Card Styling */
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  margin: 10px;
+  width: 250px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background-color: #e0fbe0;
+}
+
+/* Reactions Button */
+.reactions button {
+  background-color: #d6f542;
+  border: none;
+  padding: 8px 15px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.reactions button:hover {
+  background-color: #b6e2d3;
+}
+
+/* News Feed & Player Cards */
+.player-cards, .tweet-cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.player-cards .card, .tweet-cards .card {
+  flex: 1;
+  min-width: 250px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+/* Scrollable Content */
+.scroll-box {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+/* Ensure page content isn't hidden behind the fixed header */
+body {
+  padding-top: 60px; /* Height of the ticker */
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .player-cards, .tweet-cards {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 24px;
+  }
+  nav a {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Live Tracker | Tennis Pulse</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+    <div class="ticker" tabindex="0">
+        🎾 LIVE: Swiatek advances! | Alcaraz serves for the match | WTA Finals tomorrow!
+    </div>
+    <header>
+        <h1>Live Tennis Tracker</h1>
+        <p>Stay updated with live scores and react to the matches!</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="live.html">Live Tracker</a>
+        <a href="players.html">My Players</a>
+        <a href="news.html">News Feed</a>
+    </nav>
+
+    <main>
+        <section class="live-preview">
+        <h2>Current Matches</h2>
+        <div class="match-cards">
+            <div class="card" id="match1">
+            <h3>Alcaraz vs. Sinner</h3>
+            <p>Set 2: 3-2</p>
+            <div class="reactions">
+                <button onclick="reactToMatch('match1', '👍')">👍</button>
+                <button onclick="reactToMatch('match1', '❤️')">❤️</button>
+            </div>
+            <p class="reaction-status" id="match1-reactions">Reactions: 0</p>
+            </div>
+            <div class="card" id="match2">
+            <h3>Swiatek vs. Gauff</h3>
+            <p>Final: 7-5, 6-4</p>
+            <div class="reactions">
+                <button onclick="reactToMatch('match2', '👍')">👍</button>
+                <button onclick="reactToMatch('match2', '❤️')">❤️</button>
+            </div>
+            <p class="reaction-status" id="match2-reactions">Reactions: 0</p>
+            </div>
+        </div>
+        </section>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

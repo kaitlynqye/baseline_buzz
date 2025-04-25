@@ -15,7 +15,6 @@ body {
 
 /* ========== HEADER & NAVIGATION ========== */
 header {
-    background-color: #b6e2d3;
     text-align: center;
     padding: 30px 20px;
 }
@@ -420,7 +419,42 @@ a:hover {
     line-height: 1.7;
     color: #333;
 }
+
+/* ========== Skip to Main and Footer Styling ========== */
+/* Skip to Main Link */
+.skip-to-main {
+    position: absolute;
+    top: -40px; /* Start off-screen */
+    left: 0;
+    background-color: blue; /* Blue color */
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    z-index: 1000;
+    transition: top 0.3s;
+}
   
+.skip-to-main:focus {
+    top: 0; /* Make it visible when focused */
+    background-color: #0056b3;
+}
+  
+/* Footer Styling */
+.footer {
+    background-color: #2f4f4f;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+  
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
 
 /* ========== ACCESSIBILITY: REDUCE MOTION ========== */
 @media (prefers-reduced-motion: reduce) {

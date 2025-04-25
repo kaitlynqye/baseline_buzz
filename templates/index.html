@@ -7,59 +7,205 @@
   <link rel="stylesheet" type="text/css" href="../css/style.css"/>
 </head>
 <body>
-    <div class="ticker" tabindex="0">
-        🎾 LIVE: Swiatek advances! | Alcaraz serves for the match | WTA Finals tomorrow!
-    </div>
     <header>
         <h1>Baseline Buzz 🎾</h1>
-        <p>Your personalized tennis dashboard.</p>
+        <p>Your personalized tennis dashboard!</p>
     </header>
 
     <nav>
         <a href="index.html">Home</a>
-        <a href="live.html">Live Tracker</a>
         <a href="players.html">My Players</a>
-        <a href="news.html">News Feed</a>
+        <a href="grand_slams.html">Grand Slams</a>
     </nav>
 
     <main>
-        <section class="live-preview">
-        <h2>Live Matches</h2>
-        <div class="match-cards">
-            <div class="card">
-            <h3>Alcaraz vs. Sinner</h3>
-            <p>Set 2: 3-2</p>
-            </div>
-            <div class="card">
-            <h3>Swiatek vs. Gauff</h3>
-            <p>Final: 7-5, 6-4</p>
-            </div>
+        <div class="ticker" tabindex="0">
+            🎾 LIVE: Swiatek advances! | Alcaraz serves for the match | WTA Finals tomorrow!
         </div>
+
+        <section class="intro">
+            <div class="intro-text">
+                <h2>Welcome to <span class="highlight">Baseline Buzz</span></h2>
+                <p>Hello and welcome! I'm Kaitlyn, a huge tennis fan & tech enthusiast. This site is your go-to hub for <strong>live match updates</strong>, <strong>player rankings</strong>, and a sprinkle of <strong>tennis fun</strong>—all in one place!</p>
+                <p>Whether you're cheering for Swiatek, Sinner, or your own favorites, this space is for you!</p>
+                <p>On this home page, you'll see matches that have just been performed, the current top 15 rankings for both the ATP and WTA tour, and upcoming tournaments! 
+                You can navigate this website to see some of the matches from recent tournaments on tour, read a bit about my favorite players, learn something about tennis (if you're new), and read about the history of Grand Slams. Enjoy! 
+                </p>
+            </div>
+            <div class="intro-emoji"><span class="emoji-bounce">🎾</span></div>
+        </section>
+        
+        <section class="live-preview">
+            <h2>Live Matches</h2>
+            <div class="match-cards">
+
+                <div class="match-card" tabindex="0">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>Alcaraz vs. Sinner</h3>
+                            <p>Set 2: 3-2</p>
+                        </div>
+                        <div class="card-back">
+                            <p>Quarterfinal - Madrid Open</p>
+                        </div>
+                    </div>
+                </div>
+          
+                <div class="match-card" tabindex="0">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>Swiatek vs. Gauff</h3>
+                            <p>Final: 7-5, 6-4</p>
+                        </div>
+                        <div class="card-back">
+                            <p>Final - Stuttgart Open</p>
+                        </div>
+                    </div>
+                </div>
+          
+                <div class="match-card" tabindex="0">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>Tsitsipas vs. Ruud</h3>
+                            <p>Set 1: 6-6 (5-4)</p>
+                        </div>
+                        <div class="card-back">
+                            <p>Round of 16 - Monte Carlo</p>
+                        </div>
+                    </div>
+                </div>
+          
+                <div class="match-card" tabindex="0">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>Sabalenka vs. Rybakina</h3>
+                            <p>Set 3: 4-3</p>
+                        </div>
+                        <div class="card-back">
+                            <p>Semifinal - Miami Open</p>
+                        </div>
+                    </div>
+                </div>
+          
+                <div class="match-card" tabindex="0">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>Fritz vs. De Minaur</h3>
+                            <p>Set 2: 1-1</p>
+                        </div>
+                        <div class="card-back">
+                            <p>Quarterfinal - Indian Wells</p>
+                        </div>
+                    </div>
+                </div>
+          
+                <div class="match-card" tabindex="0">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>Paolini vs. Zheng</h3>
+                            <p>Final: 6-4, 2-6, 7-6</p>
+                        </div>
+                        <div class="card-back">
+                            <p>Final - Dubai Championships</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="match-card" tabindex="0">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>Djokovic vs. Medvedev</h3>
+                            <p>Set 1: 4-2</p>
+                        </div>
+                        <div class="card-back">
+                            <p>Semifinal - Rome Masters</p>
+                        </div>
+                    </div>
+                </div>
+          
+                <div class="match-card" tabindex="0">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>Gauff vs. Navarro</h3>
+                            <p>Coming up: Warmups in progress</p>
+                        </div>
+                        <div class="card-back">
+                            <p>Round of 32 - Madrid Open</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+          
+        <section class="rankings">
+            <h2>Current Top 15 Rankings</h2>
+            <div class="rankings-grid">
+                <div class="ranking-box">
+                    <h3>ATP - Association of Tennis Professionals</h3>
+                    <div class="scroll-box">
+                        <p>1. <a href="https://www.atptour.com/en/players/jannik-sinner/s0ag/overview">Jannik Sinner</a></p>
+                        <p>2. <a href="https://www.atptour.com/en/players/alexander-zverev/z355/overview">Alexander Zverev</a></p>
+                        <p>3. <a href="https://www.atptour.com/en/players/carlos-alcaraz/a0e2/overview">Carlos Alcaraz</a></p>
+                        <p>4. <a href="https://www.atptour.com/en/players/taylor-fritz/fb98/overview">Taylor Fritz</a></p>
+                        <p>5. <a href="https://www.atptour.com/en/players/novak-djokovic/d643/overview">Novak Djokovic</a></p>
+                        <p>6. <a href="https://www.atptour.com/en/players/jack-draper/d0co/overview">Jack Draper</a></p>
+                        <p>7. <a href="https://www.atptour.com/en/players/alex-de-minaur/dh58/overview">Alex De Minaur</a></p>
+                        <p>8. <a href="https://www.atptour.com/en/players/andrey-rublev/re44/overview">Andrey Rublev</a></p>
+                        <p>9. <a href="https://www.atptour.com/en/players/holger-rune/r0dg/overview">Holger Rune</a></p>
+                        <p>10. <a href="https://www.atptour.com/en/players/daniil-medvedev/mm58/overview">Daniil Medvedev</a></p>
+                        <p>11. <a href="https://www.atptour.com/en/players/lorenzo-musetti/m0ej/overview">Lorenzo Musetti</a></p>
+                        <p>12. <a href="https://www.atptour.com/en/players/tommy-paul/pl56/overview">Tommy Paul</a></p>
+                        <p>13. <a href="https://www.atptour.com/en/players/ben-shelton/s0s1/overview">Ben Shelton</a></p>
+                        <p>14. <a href="https://www.atptour.com/en/players/arthur-fils/f0f1/overview">Arthur Fils</a></p>
+                        <p>15. <a href="https://www.atptour.com/en/players/casper-ruud/rh16/overview">Casper Ruud</a></p>
+                    </div>
+                </div>
+                <div class="ranking-box">
+                    <h3>WTA - Women's Tennis Association</h3>
+                    <div class="scroll-box">
+                        <p>1. <a href="https://www.wtatennis.com/players/320760/aryna-sabalenka">Aryna Sabalenka</a></p>
+                        <p>2. <a href="https://www.wtatennis.com/players/326408/iga-swiatek">Iga Swiatek</a></p>
+                        <p>3. <a href="https://www.wtatennis.com/players/316956/jessica-pegula">Jesica Pegula</a></p>
+                        <p>4. <a href="https://www.wtatennis.com/players/328560/coco-gauff">Coco Gauff</a></p>
+                        <p>5. <a href="https://www.wtatennis.com/players/316959/madison-keys">Madison Keys</a></p>
+                        <p>6. <a href="https://www.wtatennis.com/players/319280/jasmine-paolini">Jasmine Paolini</a></p>
+                        <p>7. <a href="https://www.wtatennis.com/players/331809/mirra-andreeva">Mirra Andreeva</a></p>
+                        <p>8. <a href="https://www.wtatennis.com/players/328120/qinwen-zheng">Qinwen Zheng</a></p>
+                        <p>9. <a href="https://www.wtatennis.com/players/320124/paula-badosa">Paula Badosa</a></p>
+                        <p>10. <a href="https://www.wtatennis.com/players/325410/emma-navarro">Emma Navarro</a></p>
+                        <p>11. <a href="https://www.wtatennis.com/players/324166/elena-rybakina">Elena Rybakina</a></p>
+                        <p>12. <a href="https://www.wtatennis.com/players/322191/karolina-muchova">Karolina Muchova</a></p>
+                        <p>13. <a href="https://www.wtatennis.com/players/330482/diana-shnaider">Diana Shnaider</a></p>
+                        <p>14. <a href="https://www.wtatennis.com/players/322082/daria-kasatkina">Daria Kasatkina</a></p>
+                        <p>15. <a href="https://www.wtatennis.com/players/318314/barbora-krejcikova">Barbora Krejcikova</a></p>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section class="rankings">
-        <h2>Top 100 Rankings</h2>
-        <div class="rankings-grid">
-            <div class="ranking-box">
-            <h3>ATP</h3>
-            <div class="scroll-box">
-                <p>1. Djokovic</p>
-                <p>2. Alcaraz</p>
-                <p>3. Medvedev</p>
-                <!-- ... -->
+        <section class="tournaments">
+            <h2>Upcoming Grand Slam Tournaments & Where to Watch</h2>
+            <div class="tourney-list">
+                <div class="tourney-card">
+                    <a href="https://www.rolandgarros.com/en-us/"><h3>🎾 Roland-Garros (French Open)</h3></a>
+                    <p><strong>Dates:</strong> Sunday May 25 - Sunday June 8, 2025</p>
+                    <p><strong>Watch on:</strong> NBC Sports, Peacock, Tennis Channel</p>
+                </div>
+
+                <div class="tourney-card">
+                    <a href="https://www.wimbledon.com/index.html"><h3>🌱 Wimbledon</h3></a>
+                    <p><strong>Dates:</strong> Monday Jun 30 - Sunday Jul 13, 2025</p>
+                    <p><strong>Watch on:</strong> ESPN, ABC, BBC iPlayer (UK)</p>
+                </div>
+                <div class="tourney-card">
+                    <a href="https://www.usopen.org/index.html"><h3>☀️ US Open Series</h3></a>
+                    <p><strong>Dates:</strong> Sunday Aug 24 - Sunday Sep 7, 2025</p>
+                    <p><strong>Watch on:</strong> ESPN+, TSN (Canada), Amazon Prime (UK)</p>
+                </div>
             </div>
-            </div>
-            <div class="ranking-box">
-            <h3>WTA</h3>
-            <div class="scroll-box">
-                <p>1. Swiatek</p>
-                <p>2. Sabalenka</p>
-                <p>3. Gauff</p>
-                <!-- ... -->
-            </div>
-            </div>
-        </div>
-        </section>
+          </section>
+          
     </main>
+    <script src="../js/scripts.js"></script>
 </body>
 </html>
